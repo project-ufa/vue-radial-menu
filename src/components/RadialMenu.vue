@@ -43,7 +43,7 @@ const RadialMenu = {
 		itemSize: { type: Number, default: 36 },
 		rotate: { type: Number, default: 0 },
 		radius: { type: Number, default: 100 },
-		open: { type: Boolean, default: undefined }
+		open: { type: Boolean, default: undefined },
 		icon: { type: String, default: '+' }
 	},
 	data() {
