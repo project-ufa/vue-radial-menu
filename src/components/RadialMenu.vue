@@ -3,7 +3,7 @@
         <div
             :class="['vue-radial-menu-container', shouldOpen && 'open']"
             :style="style"
-            @click="handleClick">+</div>
+            @click="handleClick">{{ icon }}</div>
         <slot v-if="shouldOpen"></slot>
     </div>
 </template>
@@ -44,6 +44,7 @@ const RadialMenu = {
 		rotate: { type: Number, default: 0 },
 		radius: { type: Number, default: 100 },
 		open: { type: Boolean, default: undefined }
+		icon: { type: String, default: '+' }
 	},
 	data() {
 		const { size } = this;
